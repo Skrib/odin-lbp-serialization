@@ -6,6 +6,9 @@ The benefits of this method include:
 - Full backwards compatibility with all previous versions
 - no need for RTTI
 
+> [!NOTE]
+> This doesn't serialize data automatically, you need to explicly write the procs. If you want more of a quick-and-dirty serialization I recommend you to check out marshalling in `core:encoding/json` or `core:encoding/cbor`
+
 ## How to use
 The serializer versioning and generic `serialize` procedure depend on other parts of your package, so the indented way of using this is to copy `serializer.odin` into your game package.
 
